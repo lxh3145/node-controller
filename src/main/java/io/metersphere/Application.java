@@ -16,7 +16,10 @@ import org.springframework.context.annotation.PropertySource;
         KafkaProperties.class,
         JmeterProperties.class,
 })
+//prod
 @PropertySource(value = {"file:/opt/metersphere/conf/metersphere.properties"}, encoding = "UTF-8", ignoreResourceNotFound = true)
+//dev
+//@PropertySource(value = {"file:E:\\idea_project\\metersphere1.12\\backend\\src\\main\\resources\\metersphere.properties"}, encoding = "UTF-8", ignoreResourceNotFound = true)
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {
